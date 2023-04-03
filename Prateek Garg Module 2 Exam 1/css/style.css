@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the main content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the task list */
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.task-list a{
+    text-decoration: none;
+    color:brown;
+    transition:0.5s;
+    font-size:large;
+}
+
+.task-list a:hover{
+    text-decoration: none;
+    color:rgb(119, 26, 26);
+    transition:0.5s;
+}
+
+.task-list li:last-child {
+    border-bottom: none;
+}
+
+.task-list li span {
+    flex-grow: 1;
+}
+
+.task-list li a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 10px;
+    transition:0.5s;
+}
+
+.task-list li a:hover {
+    transition:0.5s;
+    transform:scale(1.1);
+    color:gray;
+}
+
+/* Style the form */
+form {
+    display: flex;
+    margin-top: 20px;
+}
+
+form input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    transition:0.5s;
+}
+
+form button:hover {
+    background-color: #555;
+    transition:0.5s;
+}
